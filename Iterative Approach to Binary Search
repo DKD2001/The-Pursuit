@@ -1,0 +1,22 @@
+def binary_search(seq, x):
+    start_index = 0
+    end_index = len(seq) - 1
+    
+    while start_index <= end_index:
+        midpoint = start_index + (end_index-start_index)//2
+        midpoint_value = seq[midpoint]
+        
+        if midpoint_value == x:
+            return midpoint
+            
+        elif x < midpoint_value:
+            end_index = midpoint - 1
+            
+        else:
+            start_index = midpoint+1
+            
+    return None
+    
+seq = [2, 3, 6, 8, 10, 11, 14, 20]
+x = 10
+print(binary_search(seq, x))
