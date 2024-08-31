@@ -1,0 +1,20 @@
+import math
+def find_surfarea(l,b,h):
+    surface_area=2*(l*b+b*h+l*h)
+    print(surface_area)
+    
+def find_volume(l,b,h):
+    volume=l*b*h
+    print(volume)
+    
+def find_space_diagonal(l,b,h):
+    space_diagonal=math.sqrt(l**2+b**2+h**2)
+    print(space_diagonal)
+    
+l=9
+b=6
+h=10
+
+find_surfarea(l,b,h)
+find_volume(l, b, h)
+find_space_diagonal(l, b, h)
