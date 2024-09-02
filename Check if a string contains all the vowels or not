@@ -1,0 +1,19 @@
+def check_for_vowel(string):
+    string = string.lower()
+    vowels = set("aeiou")
+    s = set({})
+    for char in string:
+        if char in vowels:
+            s.add(char)
+        else:
+            pass
+    
+    if len(s) == len(vowels):
+        print("Accepted")
+    else:
+        print("Not Accepted")
+ 
+string1 = "eSquoiaL"
+string2 = "sdasddj fks2wd"
+check_for_vowel(string1)
+check_for_vowel(string2)
