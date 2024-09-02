@@ -4,4 +4,4 @@ print("The original string is : " + str(test_str))
 
 res = sum(not chr.isspace() for chr in test_str)
 
-print("The characters Frequency avoiding spaces : " + str(res))
+print("The number of characters, avoiding spaces : " + str(res))
