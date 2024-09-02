@@ -1,0 +1,14 @@
+test_str = 'geeksforgeeks'
+length = len(test_str)
+mid = length//2
+if length % 2 == 0:
+    new1 = test_str[:mid].upper() + test_str[mid:]
+    new2 = test_str[:mid] + test_str[mid:].upper()
+    print(f"The new string with first half capitalised is : {new1}")
+    print(f"The new string with second half capitalised is : {new2}")
+    
+else:
+    new3 = test_str[:mid+1].upper() + test_str[mid+1:]
+    new4 = test_str[:mid+1] + test_str[mid+1:].upper()
+    print(f"The new string with first half capitalised is : {new3}")
+    print(f"The new string with second half capitalised is : {new4}")
