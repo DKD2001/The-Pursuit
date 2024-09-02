@@ -1,0 +1,10 @@
+s = "welcome to our planet"
+print("The string before capitalization : ", s, ".")
+a=s.split()
+res=[]
+for i in a:
+    x = i[0].upper() + i[1:-1] + i[-1].upper()
+    res.append(x)
+    
+res=" ".join(res)
+print("The string after capitalization : ", res, ".")
