@@ -1,0 +1,47 @@
+def is_it_palindrome(s):
+    return s == s[::-1]
+    
+def is_it_symmetrical(s):
+    length = len(s)
+    mid = length // 2
+    if length % 2 ==0:
+        return s[:mid] == s[mid:]
+        
+    else:
+        return s[:mid] == s[mid+1:]
+        
+string1 = "mamamia"
+string2 = "bambbamb"
+string3 = "lololol"
+
+if is_it_symmetrical(string1):
+    print("String1 is symmetrical.")
+else:
+    print("String1 is not symmetrical.")
+    
+if is_it_palindrome(string1):
+    print("String1 is a palindrome.")
+else:
+    print("String1 is not a palindrome.")
+    
+if is_it_symmetrical(string2):
+    print("String2 is symmetrical.")
+else:
+    print("String2 is not symmetrical.")
+    
+if is_it_palindrome(string2):
+    print("String2 is a palindrome.")
+else:
+    print("String2 is not a palindrome.")
+    
+if is_it_symmetrical(string3):
+    print("String3 is symmetrical.")
+else:
+    print("String3 is not symmetrical.")
+    
+if is_it_palindrome(string3):
+    print("String3 is a palindrome.")
+else:
+    print("String3 is not a palindrome.")
+
+# A case where the string is palindrome without being symmetrical does not exist.
