@@ -1,0 +1,14 @@
+#This code also counts repeated vowels
+
+def count_vowels(str):
+    total = 0
+    vowel = set("aeiouAEIOU")
+    
+    for i in str:
+        if i in vowel:
+            total += 1
+            
+    print(f"Number of vowels in the given string : {total}")
+    
+given_string = "Deutschlaand"
+count_vowels(given_string)
