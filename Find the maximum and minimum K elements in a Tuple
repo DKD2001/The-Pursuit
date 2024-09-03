@@ -1,0 +1,13 @@
+test_tup = (5, 20, 3, 7, 6, 8)
+print("The original tuple is : ", test_tup)
+
+k = 2
+res = []
+test_tup = list(sorted(test_tup))
+
+for index, value in enumerate(test_tup):
+    if index < k or index >= len(test_tup) - k:
+        res.append(value)
+res =  tuple(res)
+
+print("The extracted value : " + str(res))
