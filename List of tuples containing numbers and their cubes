@@ -1,0 +1,5 @@
+list1 = [1, 2, 3]
+res = []
+for i in list1:
+    res.append((i,i**3))
+print(res)
