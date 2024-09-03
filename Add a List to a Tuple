@@ -1,0 +1,8 @@
+test_list = [5, 6, 7]
+print("The given list is : " + str(test_list))
+
+test_tup = (9, 10)
+
+result = tuple(list(test_tup) + test_list)
+
+print(f"The container after addition : {result}" )
