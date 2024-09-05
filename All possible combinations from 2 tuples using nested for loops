@@ -1,0 +1,11 @@
+test_tuple1 = [7, 2]
+test_tuple2 = [7, 8]
+
+result = []
+
+for i in test_tuple1:
+    for j in test_tuple2:
+        result.append((i,j))
+        result.append((j,i))
+        
+print(result)
