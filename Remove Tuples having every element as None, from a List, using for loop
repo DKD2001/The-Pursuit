@@ -1,0 +1,11 @@
+test_list = [(None, 2), (None, None), (3, 4), (12, 3), (None, )]
+
+result = []
+
+for i in test_list:
+    for j in i:
+        if j != None:
+            if i not in result:
+                result.append(i)
+            
+print(result)
