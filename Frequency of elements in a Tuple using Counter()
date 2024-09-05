@@ -1,0 +1,7 @@
+from collections import Counter
+
+test_tup = (4, 5, 4, 5, 6, 6, 5)
+
+result = dict(Counter(test_tup))
+    
+print("Tuple elements frequency is : " + str(result))
