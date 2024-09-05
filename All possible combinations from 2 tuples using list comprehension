@@ -1,0 +1,7 @@
+test_tuple1 = (4, 5)
+test_tuple2 = (7, 8)
+
+result = [(a, b) for a in test_tuple1 for b in test_tuple2]
+result = result + [(a, b) for a in test_tuple2 for b in test_tuple1]
+
+print("The new Tuple is : " + str(result))
