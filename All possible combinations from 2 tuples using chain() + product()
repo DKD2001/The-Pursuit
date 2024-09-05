@@ -1,0 +1,11 @@
+from itertools import chain, product
+
+test_tuple1 = [4, 5]
+test_tuple2 = [7, 8]
+
+print("The original Tuple 1 is : " + str(test_tuple1))
+print("The original Tuple 2 is : " + str(test_tuple2))
+
+result = list(chain(product(test_tuple1, test_tuple2), product(test_tuple2, test_tuple1)))
+
+print("The new Tuple is : " + str(result))
