@@ -1,0 +1,7 @@
+from collections import Counter
+
+test_list = [(6, 5, 8), (2, 7), (6, 5, 8), (6, 5, 8), (9, ), (2, 7)]
+print("The original List : " + str(test_list))
+
+result = [(*key, val) for key, val in Counter(test_list).most_common()]
+print("The Frequency List is : " + str(result))
