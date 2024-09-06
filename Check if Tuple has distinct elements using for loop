@@ -1,0 +1,13 @@
+test_tup = (1, 4, 5, 6, 1, 4)
+
+result = True
+temp = set()
+
+for i in test_tup:
+    if i in temp:
+        result = False
+        break
+    
+    temp.add(i)
+    
+print("Are the elements in the Tuple Distinct? : " + str(result))
