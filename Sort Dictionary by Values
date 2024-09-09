@@ -1,0 +1,13 @@
+from collections import OrderedDict
+import numpy as np
+
+dict = {'apple' : 10, 'mango' : 9, 'orange' : 15, 'pineapple' : 2, 'banana' : 32, 'watermelon' : 4}
+dict['guava'] = 4
+print(dict)
+
+keys = list(dict.keys())
+values = list(dict.values())
+sorted_value_index = np.argsort(values)
+sort_dict = {keys[i] : values[i] for i in sorted_value_index}
+
+print(sort_dict)
