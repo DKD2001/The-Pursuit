@@ -1,0 +1,17 @@
+places = {("19.07'53.2", "72.54'51.0") : "Mumbai", ("28.33'34.1", "77.06'16.6") : "Delhi"}
+
+print(places)
+print('\n')
+
+latitude = []
+longitude = []
+place = []
+
+for i in places:
+    latitude.append(i[0])
+    longitude.append(i[1])
+    place.append(places[i[0], i[1]])
+    
+print(latitude)
+print(longitude)
+print(place)
