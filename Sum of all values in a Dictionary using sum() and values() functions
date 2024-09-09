@@ -1,0 +1,5 @@
+def returnSum(dict):
+    return sum(dict.values())
+    
+test_dictionary = {'a' : 100, 'b' : 200, 'c' : 300}
+print(returnSum(test_dictionary))
