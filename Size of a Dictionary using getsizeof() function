@@ -1,0 +1,8 @@
+import sys
+dict_1 = {'A' : 1, 'B' : 2, 'C' : 3}
+dict_2 = {'D' : 4, 'E' : 5, 'F' : 6}
+dict_3 = {'G' : 7, 'H' : 8, 'I' : 9, 'J' : 10, 'K' : 11}
+
+print("Size of dict_1 is : " + str(sys.getsizeof(dict_1)) + "bytes")
+print("Size of dict_2 is : " + str(sys.getsizeof(dict_2)) + "bytes")
+print("Size of dict_3 is : " + str(sys.getsizeof(dict_3)) + "bytes")
