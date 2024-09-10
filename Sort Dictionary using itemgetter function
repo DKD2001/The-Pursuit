@@ -1,0 +1,16 @@
+from operator import itemgetter
+
+data_list = [{"Name" : "Nandini", "Age" : 20}, {"Name" : "Manjeet", "Age" : 20}, {"Name" : "Nikhil", "Age" : 19}]
+
+print("The list printed sorting by age : ")
+print(sorted(data_list, key = itemgetter('Age')))
+
+print("\r")
+
+print("The list printed sorting by age and name : ")
+print(sorted(data_list, key = itemgetter('Age', 'Name')))
+
+print("\r")
+
+print("The list printed sorting by age in descending order : ")
+print(sorted(data_list, key = itemgetter('Age'), reverse = True))
