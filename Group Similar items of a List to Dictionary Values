@@ -1,0 +1,11 @@
+from collections import defaultdict
+from collections import Counter
+
+test_list = [4, 6, 7, 4, 2, 2, 4, 8, 5, 8]
+print("The original List : " + str(test_list))
+
+res = defaultdict(list)
+for ele in test_list:
+    res[ele].append(ele)
+
+print("Similar grouped dictionary : " + str(dict(res)))
