@@ -1,0 +1,13 @@
+test_dict = {"Gfg" : 4, "is" : 4, "Best" : 4, "for" : 4, "Geeks" : 4}
+print("The given Dictionary is : " + str(test_dict))
+
+total = 0
+n = 0
+
+for i in test_dict:
+    total = total + test_dict[i]
+    n += 1
+
+mean = total/n
+
+print("The Mean of the values in the given Dictionary : "mean)
