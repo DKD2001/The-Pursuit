@@ -1,0 +1,14 @@
+test_dict = {'Arushi' : 22, 'Mani' : 21, 'Haritha' : 21, 'Anuradha' : 23}
+
+print("The Dictionary before performing remove is : ", test_dict)
+
+remove_value = test_dict.pop('Mani')
+
+print("The Dictionary after remove is : ", test_dict)
+print("The removed key's value is : ", remove_value)
+print('\r')
+
+remove_value = test_dict.pop('Manjeet', 'No key found')
+
+print("The dictionary after remove is : ", test_dict)
+print("The removed key's value is : ", remove_value)
