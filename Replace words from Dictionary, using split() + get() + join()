@@ -1,0 +1,13 @@
+test_str = 'geeksforgeeks best for geeks'
+print('The original String is : ' + str(test_str))
+
+lookp_dict = {"best" : "good and better", "geeks" : "all cs aspirants"}
+
+temp = test_str.split()
+result = []
+for word in temp:
+    result.append(lookp_dict.get(word, word))
+    
+result = ' '.join(result)
+
+print("Replaced Strings : " + str(result))
