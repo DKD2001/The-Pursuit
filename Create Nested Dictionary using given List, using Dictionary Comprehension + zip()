@@ -1,0 +1,7 @@
+test_dict = {'Gfg' : 4, 'is' : 5, 'best' : 9}
+test_list = [8, 3, 2]
+print("The original Dictionary : " + str(test_dict))
+print("The original List : " + str(test_list))
+
+result = {idx : {key : test_dict[key]} for idx, key in zip(test_list, test_dict)}
+print("The mapped Dictionary : " + str(result))
