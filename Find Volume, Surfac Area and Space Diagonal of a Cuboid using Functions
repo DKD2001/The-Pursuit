@@ -1,0 +1,21 @@
+import math
+
+def find_vol(l, w, h):
+    volume = l*w*h
+    print(volume)
+    
+def find_surf(l, w, h):
+    surface_area = 2*(l*w + l*h + w*h)
+    print(surface_area)
+    
+def find_dia(l, w, h):
+    space_diagonal = math.sqrt(l**2 + w**2 + h**2)
+    print(space_diagonal)
+    
+l = 10
+w = 8
+h = 5
+
+find_vol(l, w, h)
+find_surf(l, w, h)
+find_dia(l, w, h)
