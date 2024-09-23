@@ -1,0 +1,11 @@
+def multiply_num(a):
+    b = 40
+    r = a*b
+    return r
+    
+z = multiply_num
+
+print(z(6))
+print(z(z(z(6))))
+print(z(10))
+print(z(100))
